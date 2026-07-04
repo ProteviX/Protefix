@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Protefix</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+      background: #0a0a0a;
+      color: white;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      background: #111;
+      padding: 15px;
+    }
+
+    nav button {
+      background: transparent;
+      color: white;
+      border: 1px solid #333;
+      padding: 10px 14px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    nav button:hover {
+      background: #00ff88;
+      color: black;
+      border-color: #00ff88;
+    }
+
+    .page {
+      display: none;
+      padding: 70px 20px;
+      text-align: center;
+    }
+
+    .active {
+      display: block;
+    }
+
+    h1 {
+      font-size: 60px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #00ff88;
+    }
+
+    .card {
+      background: #151515;
+      padding: 25px;
+      border-radius: 12px;
+      margin-top: 15px;
+      max-width: 850px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.6;
+      text-align: left;
+    }
+
+    .email {
+      color: #00ff88;
+      font-weight: bold;
+      font-size: 20px;
+      display: block;
+      margin-top: 10px;
+    }
+
+    .shop-item {
+      background: #151515;
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 15px;
+      border: 1px solid #222;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <button onclick="showPage('home')">Home</button>
+  <button onclick="showPage('story')">Geschichte</button>
+  <button onclick="showPage('help')">Hilfe</button>
+  <button onclick="showPage('shop')">Shop</button>
+  <button onclick="showPage('contact')">Kontakt</button>
+</nav>
+
+<!-- HOME -->
+<div id="home" class="page active">
+  <h1>PROTEFIX</h1>
+
+  <div class="card">
+    <b>Willkommen bei Protefix</b><br><br>
+
+    Protefix ist eine moderne Fitness- und Supplement-Marke, die für Menschen entwickelt wurde,
+    die wirklich etwas verändern wollen – im Körper, im Sport und im Alltag.
+    <br><br>
+
+    Unser Fokus liegt auf echter Leistung statt leeren Versprechen.
+    Wir wollen Produkte entwickeln, die dir helfen stärker, schneller und besser zu werden.
+    <br><br>
+
+    Egal ob Gym, Fußball oder tägliche Fitness – Protefix ist dein Begleiter für Fortschritt.
+  </div>
+
+  <div class="card">
+    <b>🔥 Unsere Mission</b><br><br>
+
+    Wir wollen eine Marke schaffen, die ehrlich ist und funktioniert.
+    Keine unnötigen Inhaltsstoffe, keine übertriebenen Versprechen – nur klare Produkte mit Wirkung.
+    <br><br>
+
+    Unsere Vision ist es, eine Community aufzubauen von Menschen, die sich gegenseitig pushen,
+    besser zu werden und ihre Ziele wirklich zu erreichen.
+  </div>
+
+  <div class="card">
+    <b>💪 Wofür wir stehen</b><br><br>
+
+    • Disziplin<br>
+    • Fortschritt<br>
+    • Stärke<br>
+    • Ehrlichkeit<br>
+    • Performance im echten Leben
+  </div>
+</div>
+
+<!-- STORY -->
+<div id="story" class="page">
+  <h2>🔥 Geschichte</h2>
+
+  <div class="card">
+    Protefix wurde gegründet, weil viele Supplements auf dem Markt entweder zu teuer,
+    zu künstlich oder einfach nicht effektiv genug sind.
+    <br><br>
+    Wir wollten eine Marke entwickeln, die das Gegenteil ist:
+    Einfach, ehrlich und auf echte Ergebnisse fokussiert.
+  </div>
+
+  <div class="card">
+    💪 Zukünftige Produkte:
+    <br><br>
+    • Proteinriegel für unterwegs<br>
+    • Whey Protein für Muskelaufbau<br>
+    • Milk Protein für langsame Versorgung über Nacht<br>
+    • Creatin für mehr Kraft & Leistung<br>
+    • Recovery Drinks für schnellere Erholung
+  </div>
+</div>
+
+<!-- HELP -->
+<div id="help" class="page">
+  <h2>🆘 Hilfe</h2>
+
+  <div class="card">
+    <b>Wie funktioniert Protefix?</b><br>
+    Protefix Produkte sind dafür gedacht, deine Ernährung und dein Training zu unterstützen.
+    Sie ersetzen keine normale Ernährung, sondern ergänzen sie sinnvoll.
+  </div>
+
+  <div class="card">
+    <b>Wann nehme ich Protein?</b><br>
+    Protein kann nach dem Training, morgens oder zwischendurch genommen werden.
+    Es hilft dem Körper, Muskeln zu reparieren und aufzubauen.
+  </div>
+
+  <div class="card">
+    <b>Was bringt Creatin?</b><br>
+    Creatin hilft dir dabei, mehr Kraft und Leistung im Training zu erreichen.
+    Es ist eines der am besten erforschten Supplements überhaupt.
+  </div>
+
+  <div class="card">
+    <b>Für wen ist Protefix?</b><br>
+    Für alle, die sich verbessern wollen – egal ob Anfänger oder Fortgeschrittene.
+  </div>
+</div>
+
+<!-- SHOP -->
+<div id="shop" class="page">
+  <h2>🛒 Shop (Coming Soon)</h2>
+
+  <div class="shop-item">
+    Protein Riegel – bald verfügbar
+  </div>
+
+  <div class="shop-item">
+    Whey Protein – Coming Soon
+  </div>
+
+  <div class="shop-item">
+    Creatin – Coming Soon
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div id="contact" class="page">
+  <h2>📩 Kontakt</h2>
+
+  <div class="card">
+    Schreib uns einfach:
+    <span class="email">protefixx@gmail.com</span>
+    <br>
+    Wir antworten so schnell wie möglich bei Fragen, Ideen oder Kooperationen.
+  </div>
+</div>
+
+<script>
+  function showPage(pageId) {
+    document.querySelectorAll(".page").forEach(p => p.classList.remove("active"));
+    document.getElementById(pageId).classList.add("active");
+  }
+</script>
+
+</body>
+</html>
